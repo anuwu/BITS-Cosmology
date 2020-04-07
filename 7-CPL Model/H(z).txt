@@ -1,0 +1,18 @@
+I typed this in https://www.integral-calculator.com/
+3*(1 + (w0 + w_a*x^7/(1+x)^7))/(1+x)
+and set the limits of integration from 0 to z and found a long ass expreesion. Then I put it into the expression for H(z) in the 7-CPL model.
+
+H0 = 73.8 ;
+om_m0 = [0.1, 0.9] ---> any value in this range
+om_r0 = [3.0 , 9.0] * 10^-5 ---> any value in this range
+wa = [-1.9, -0.4] --> any value in this range
+w0 = [-4.0 , 4.0] ---> any value in this range
+
+H0*sqrt
+(
+om_m0*(1+z)^3
++
+om_ro(1+z)^4
++
+(1 - om_m0 - om_r0)*exp(3*(wa+w0+1)*ln(z+1) - wa*z*(1089*z^6 + 4683*z^5 + 96939*z^4 + 11165*z^3 + 7490*z^2 + 2730*z + 420)/(140 * (z+1)^7))
+)

@@ -1,0 +1,1 @@
+plot "minus1point1_minuspoint1.txt" smooth csplines title "w0=-1.1, wa=-0.1", "minus1point1_point1.txt" smooth csplines title "w0=-1.1, wa=0.1", "minuspoint9_minuspoint1.txt" smooth csplines title "w0=-0.9, wa=-0.1", "minuspoint9_point1.txt" smooth csplines title "w0=-0.9, wa=0.1"

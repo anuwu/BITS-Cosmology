@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int square (int x)
+{
+    return (x*x) ;
+}
+
+int cube (int x)
+{
+    return (x*x*x) ;
+}
+
+int op (int (*func)(int) , int x)
+{
+    return (func(x)) ;
+}
+
+int main()
+{
+    int val1 , val2 ;
+    val1 = op(square , 2) ;
+    val2 = op(cube , 2) ;
+    
+    printf ("%d %d " , val1, val2) ;
+
+    return 0;
+}

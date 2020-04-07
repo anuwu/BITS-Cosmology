@@ -1,0 +1,1 @@
+plot "hu_1a.txt" smooth csplines title "(1, 0.2, 0.05, 1, 0, 0.5, 0)" , "hu_2b.txt" smooth csplines title "(0.3, 0.06, 0.03, 1, 0.7, 0.5, 0)"
